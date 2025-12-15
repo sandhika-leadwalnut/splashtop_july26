@@ -16,7 +16,7 @@ const BacklinkBestPractices = () => {
             <div className="flex items-center mb-3">
               <i className="fa-solid fa-check text-blue-500 mr-2"></i>
               <h3 className="text-lg font-semibold text-blue-600">
-                ACQUISITION METHOD
+                ACQUISITION APPROACH
               </h3>
             </div>
             <ul className="space-y-2 text-sm text-gray-600">
@@ -40,7 +40,7 @@ const BacklinkBestPractices = () => {
             </div>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
-                • Domains with a Domain Authority (DA) between 30 and 70 are
+                • Domains with a Domain Authority (DA) between 30 and 70+ are
                 targeted.
               </li>
               <li>
@@ -70,7 +70,7 @@ const BacklinkBestPractices = () => {
                 the surrounding content.
               </li>
               <li>
-                • Anchor texts are typically 4-5 words in length and consist of
+                • Anchor texts are typically 4-8 words in length and consist of
                 variations or partial matches of the target keyword to maintain
                 natural diversity.
               </li>

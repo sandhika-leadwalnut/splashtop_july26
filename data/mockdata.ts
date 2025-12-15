@@ -532,27 +532,27 @@ export const dashboardStats = {
 export interface KeywordImpactRow {
   keyword: string;
   baseline: number; // Jan'25 ranking
-  jun25: number; // June'25 ranking (not displayed in chart)
+  jan25: number; // June'25 ranking (not displayed in chart)
   nov25: number; // Current month ranking (Oct'25) - UPDATE THIS MONTHLY
 }
 
 export const keywordImpactRows: KeywordImpactRow[] = [
   // Top 6 keywords shown in the bar chart
-  { keyword: "remote access", baseline: 17, jun25: 9, nov25: 3 },
-  { keyword: "remote access software", baseline: 12, jun25: 10, nov25: 10 },
-  { keyword: "remote support", baseline: 8, jun25: 10, nov25: 11 },
-  { keyword: "remote support software", baseline: 11, jun25: 12, nov25: 35 },
-  { keyword: "remote desktop", baseline: 26, jun25: 14, nov25: 15 },
-  { keyword: "remote desktop software", baseline: 13, jun25: 13, nov25: 28 },
+  { keyword: "remote access", baseline: 16, jan25: 9, nov25: 10 },
+  { keyword: "remote support", baseline: 22, jan25: 10, nov25: 6 },
+  { keyword: "remote access solution", baseline: 101, jan25: 55, nov25: 8 },
+  { keyword: "remote support software", baseline: 13, jan25: 12, nov25: 10 },
+  { keyword: "remote support solution", baseline: 12, jan25: 9, nov25: 6 },
+  { keyword: "secure remote desktop", baseline: 13, jan25: 7, nov25: 1 },
   // Additional keywords (not shown in chart, but available for future use)
-  { keyword: "teamviewer alternative", baseline: 4, jun25: 3, nov25: 3 },
-  { keyword: "teamviewer pricing", baseline: 6, jun25: 7, nov25: 6 },
-  { keyword: "logmein alternative", baseline: 3, jun25: 3, nov25: 3 },
-  { keyword: "logmein pricing", baseline: 5, jun25: 7, nov25: 8 },
-  { keyword: "anydesk alternative", baseline: 27, jun25: 20, nov25: 16 },
-  { keyword: "anydesk pricing", baseline: 9, jun25: 8, nov25: 6 },
-  { keyword: "gotomypc alternative", baseline: 1, jun25: 2, nov25: 1 },
-  { keyword: "gotomypc pricing", baseline: 3, jun25: 3, nov25: 4 },
+  // { keyword: "teamviewer alternative", baseline: 4, jun25: 3, nov25: 3 },
+  // { keyword: "teamviewer pricing", baseline: 6, jun25: 7, nov25: 6 },
+  // { keyword: "logmein alternative", baseline: 3, jun25: 3, nov25: 3 },
+  // { keyword: "logmein pricing", baseline: 5, jun25: 7, nov25: 8 },
+  // { keyword: "anydesk alternative", baseline: 27, jun25: 20, nov25: 16 },
+  // { keyword: "anydesk pricing", baseline: 9, jun25: 8, nov25: 6 },
+  // { keyword: "gotomypc alternative", baseline: 1, jun25: 2, nov25: 1 },
+  // { keyword: "gotomypc pricing", baseline: 3, jun25: 3, nov25: 4 },
 ];
 
 // ============================================================================
