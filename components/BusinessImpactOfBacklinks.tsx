@@ -44,6 +44,9 @@ const BusinessImpactOfBacklinks = () => {
         <h3 className="text-lg font-semibold text-gray-700 mt-2">
           {BUSINESS_IMPACT_CONFIG.chartTitle}
         </h3>
+        <div className="mt-3 px-4 py-2 bg-gray-100 rounded-md inline-block">
+          <p className="text-sm font-semibold text-gray-700">Source: GSC</p>
+        </div>
       </div>
 
       <div className="mb-6">
@@ -57,18 +60,21 @@ const BusinessImpactOfBacklinks = () => {
                   jan25: row.baseline,
                   oct25: row.nov25,
                 }))}
-              margin={{ top: 50, right: 30, left: 30, bottom: 80 }}
+              margin={{ top: 50, right: 30, left: 30, bottom: 120 }}
               barCategoryGap="25%"
             >
               <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
               <XAxis
                 dataKey="keyword"
-                tick={{ fontSize: 12, fontWeight: "bold" }}
+                tick={{ fontSize: 10, fontWeight: "bold" }}
                 interval={0}
+                angle={-35}
+                textAnchor="end"
+                height={100}
                 label={{
                   value: "Keywords",
                   position: "insideBottom",
-                  offset: -5,
+                  offset: -10,
                   style: {
                     textAnchor: "middle",
                     fill: "#6b7280",
@@ -110,12 +116,12 @@ const BusinessImpactOfBacklinks = () => {
                 dataKey="jan25"
                 fill="#3b82f6"
                 name={MONTH_LABELS.baseline}
-                barSize={50}
+                barSize={30}
                 radius={[4, 4, 0, 0]}
                 label={{
                   position: "top",
                   style: {
-                    fontSize: "11px",
+                    fontSize: "10px",
                     fontWeight: "bold",
                     fill: "#1f2937",
                   },
@@ -125,12 +131,12 @@ const BusinessImpactOfBacklinks = () => {
                 dataKey="oct25"
                 fill="#059669"
                 name={MONTH_LABELS.current}
-                barSize={50}
+                barSize={30}
                 radius={[4, 4, 0, 0]}
                 label={{
                   position: "top",
                   style: {
-                    fontSize: "11px",
+                    fontSize: "10px",
                     fontWeight: "bold",
                     fill: "#1f2937",
                   },
@@ -153,11 +159,11 @@ const BusinessImpactOfBacklinks = () => {
       </div>
 
       <div className="mt-8">
-        <div className="flex justify-between items-center mb-3">
-          <h3 className="text-lg font-semibold text-gray-800">
-            {BUSINESS_IMPACT_CONFIG.trendChartTitle}
-          </h3>
-          <p className="text-xs text-gray-500 italic">Source: Semrush</p>
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">
+          {BUSINESS_IMPACT_CONFIG.trendChartTitle}
+        </h3>
+        <div className="mb-4 px-4 py-2 bg-gray-100 rounded-md inline-block">
+          <p className="text-sm font-semibold text-gray-700">Source: Semrush</p>
         </div>
         <div className="mb-4 p-4 rounded-lg border border-gray-200 bg-gray-50">
           <div className="flex items-start gap-3">
@@ -255,10 +261,6 @@ const BusinessImpactOfBacklinks = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="mt-4 text-right">
-        <p className="text-xs text-gray-500 italic">Source: GSC</p>
       </div>
     </div>
   );

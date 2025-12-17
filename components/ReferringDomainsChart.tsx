@@ -60,6 +60,9 @@ const ReferringDomainsChart: React.FC<ReferringDomainsChartProps> = ({
         title={UI_TEXT.referringDomains.title}
         subtitle={UI_TEXT.referringDomains.subtitle}
       />
+      <div className="mb-4 px-4 py-2 bg-gray-100 rounded-md inline-block">
+        <p className="text-sm font-semibold text-gray-700">Source: Ahrefs</p>
+      </div>
 
       <div className="relative">
         <div className="space-y-6 mb-6">
@@ -85,10 +88,6 @@ const ReferringDomainsChart: React.FC<ReferringDomainsChartProps> = ({
         <p className="text-sm text-black font-bold text-center">
           {REFERRING_DOMAINS_CONFIG.qualityStatement}
         </p>
-      </div>
-
-      <div className="mt-4 text-right">
-        <p className="text-xs text-gray-500 italic">Source: Ahrefs</p>
       </div>
 
       {hoveredItem && (

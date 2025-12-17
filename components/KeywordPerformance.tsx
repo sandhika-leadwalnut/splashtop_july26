@@ -282,6 +282,9 @@ const KeywordPerformance = ({ data }: KeywordPerformanceProps) => {
       <h2 className="text-2xl font-bold text-gray-800 mb-2">
         {UI_TEXT.keywordPerformance.title}
       </h2>
+      <div className="mb-4 px-4 py-2 bg-gray-100 rounded-md inline-block">
+        <p className="text-sm font-semibold text-gray-700">Source: GSC</p>
+      </div>
       <div className="w-full h-px bg-gray-200 mb-6"></div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -333,10 +336,6 @@ const KeywordPerformance = ({ data }: KeywordPerformanceProps) => {
           title={UI_TEXT.keywordPerformance.firstPageTitle}
           keywords={firstPageOct}
         />
-      </div>
-
-      <div className="text-right">
-        <p className="text-xs text-gray-500 italic">Source: GSC</p>
       </div>
     </div>
   );

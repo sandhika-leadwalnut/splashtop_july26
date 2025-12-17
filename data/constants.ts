@@ -112,8 +112,8 @@ export const KEY_FINDINGS = [
 ];
 
 export const BUSINESS_IMPACT_CONFIG = {
-  topKeywordsCount: 6,
-  chartTitle: "Top 6 critical keywords",
+  topKeywordsCount: 9,
+  chartTitle: "Critical Keywords",
   chartSubtitle: "Critical keywords Performance",
   insightText:
     "Backlinks played a key role in stabilizing rankings by killing volatility, resulting in consistent, upward movement for the critical keywords.",
