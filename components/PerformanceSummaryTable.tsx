@@ -109,6 +109,9 @@ const PerformanceSummaryTable = ({ data }: PerformanceSummaryTableProps) => {
             </tbody>
           </table>
         </div>
+        <div className="p-4 text-right">
+          <p className="text-xs text-gray-500 italic">Source: GSC</p>
+        </div>
       </div>
     </div>
   );

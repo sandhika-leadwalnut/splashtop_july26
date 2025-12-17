@@ -334,6 +334,10 @@ const KeywordPerformance = ({ data }: KeywordPerformanceProps) => {
           keywords={firstPageOct}
         />
       </div>
+
+      <div className="text-right">
+        <p className="text-xs text-gray-500 italic">Source: GSC</p>
+      </div>
     </div>
   );
 };

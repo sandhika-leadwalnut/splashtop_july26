@@ -87,6 +87,10 @@ const ReferringDomainsChart: React.FC<ReferringDomainsChartProps> = ({
         </p>
       </div>
 
+      <div className="mt-4 text-right">
+        <p className="text-xs text-gray-500 italic">Source: Ahrefs</p>
+      </div>
+
       {hoveredItem && (
         <ReferringDomainsTooltip
           item={hoveredItem}

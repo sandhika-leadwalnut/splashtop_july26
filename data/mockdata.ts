@@ -504,7 +504,7 @@ export const dashboardStats = {
   urlsTracked: 8,
   totalBacklinks: 85,
   keywordsTracked: 16,
-  dataSource: "GA, moz, GSC",
+  dataSource: "Ahrefs, GSC",
 };
 
 // ============================================================================
@@ -538,13 +538,16 @@ export interface KeywordImpactRow {
 
 export const keywordImpactRows: KeywordImpactRow[] = [
   // Top 6 keywords shown in the bar chart
+  { keyword: "remote desktop", baseline: 41, jan25: 41, nov25: 43 },
+  { keyword: "remote desktop software", baseline: 22, jan25: 22, nov25: 12 },
+  { keyword: "remote access software", baseline: 101, jan25: 101, nov25: 12 },
   { keyword: "remote access", baseline: 16, jan25: 9, nov25: 10 },
   { keyword: "remote support", baseline: 22, jan25: 10, nov25: 6 },
   { keyword: "remote access solution", baseline: 101, jan25: 55, nov25: 8 },
-  { keyword: "remote support software", baseline: 13, jan25: 12, nov25: 10 },
-  { keyword: "remote support solution", baseline: 12, jan25: 9, nov25: 6 },
-  { keyword: "secure remote desktop", baseline: 13, jan25: 7, nov25: 1 },
   // Additional keywords (not shown in chart, but available for future use)
+  // { keyword: "remote support software", baseline: 13, jan25: 12, nov25: 10 },
+  // { keyword: "remote support solution", baseline: 12, jan25: 9, nov25: 6 },
+  // { keyword: "secure remote desktop", baseline: 13, jan25: 7, nov25: 1 },
   // { keyword: "teamviewer alternative", baseline: 4, jun25: 3, nov25: 3 },
   // { keyword: "teamviewer pricing", baseline: 6, jun25: 7, nov25: 6 },
   // { keyword: "logmein alternative", baseline: 3, jun25: 3, nov25: 3 },
@@ -559,11 +562,12 @@ export const keywordImpactRows: KeywordImpactRow[] = [
 // KEYWORD TREND CHARTS DATA
 // ============================================================================
 // Extended trend data for specific keywords (used in Business Impact charts)
-// These arrays contain 16 data points matching extendedMonths from constants.ts
+// These arrays contain 17 data points matching extendedMonths from constants.ts
+// Indices: 0=Jul'24, 1=Aug'24, ..., 15=Oct'25, 16=Nov'25
 export const remoteAccessTrendData = [
-  14, 36, 18, 25, 13, 15, 13, 10, 9, 9, 12, 13, 5, 4, 6, 9, 10,
+  14, 36, 18, 25, 13, 15, 13, 10, 9, 9, 12, 13, 5, 4, 6, 4, 5,
 ];
 
 export const remoteDesktopSoftwareTrendData = [
-  29, 32, 27, 32, 18, 15, 19, 21, 19, 18, 15, 11, 14, 13, 6, 7, 12,
+  29, 32, 27, 32, 18, 15, 19, 21, 19, 18, 15, 11, 14, 13, 6, 8, 14,
 ];

@@ -1,8 +1,8 @@
 export const REPORT_CONFIG = {
   reportDate: "Dec 10, 2025",
   reportTitle: "Backlink Performance Summary Report",
-  reportSubtitle: "Country: US | Source: GA, moz, GSC",
-  dataSource: "GA, moz, GSC",
+  reportSubtitle: "Country: US | Source: Ahrefs, GSC",
+  dataSource: "Ahrefs, GSC",
   country: "US",
 };
 
@@ -65,7 +65,7 @@ export const MONTH_INDICES = {
 // Month labels for display (used in charts and UI)
 // These should match the months at MONTH_INDICES.baseline and MONTH_INDICES.current
 export const MONTH_LABELS = {
-  baseline: "Jan 2025", // Display label for baseline month
+  baseline: "Jan 2025 (Baseline)", // Display label for baseline month
   current: "Nov 2025", // Display label for current month
 };
 
@@ -73,7 +73,7 @@ export const DASHBOARD_STATS = {
   urlsTracked: 8,
   totalBacklinks: 121,
   keywordsTracked: 16,
-  dataSource: "GA, moz, GSC",
+  dataSource: "Ahrefs, GSC",
 };
 
 export const KEY_FINDINGS = [
@@ -114,10 +114,12 @@ export const KEY_FINDINGS = [
 export const BUSINESS_IMPACT_CONFIG = {
   topKeywordsCount: 6,
   chartTitle: "Top 6 critical keywords",
-  chartSubtitle: "Six critical keywords moved to Page 1",
+  chartSubtitle: "Critical keywords Performance",
   insightText:
     "Backlinks played a key role in stabilizing rankings by killing volatility, resulting in consistent, upward movement for the critical keywords.",
   trendChartTitle: "Ranking Performance Trend",
+  trendKeyTakeaway:
+    "Remote Access and Remote Desktop Software shows a noticeable improvement in rankings on page 1 after backlink addition. However, this improvement was not sustained due to the lack of consistent backlink addition, leading to fluctuations in ranking positions.",
 };
 
 export const REFERRING_DOMAINS_CONFIG = {
