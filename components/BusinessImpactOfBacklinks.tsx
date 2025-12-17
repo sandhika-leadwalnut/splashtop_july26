@@ -194,9 +194,14 @@ const BusinessImpactOfBacklinks = () => {
         <div className="mb-4 p-4 rounded-lg border border-gray-200 bg-gray-50">
           <div className="flex items-start gap-3">
             <i className="fa-solid fa-lightbulb text-yellow-600 mt-1"></i>
-            <p className="text-gray-700 font-bold whitespace-pre-line">
-              {BUSINESS_IMPACT_CONFIG.trendKeyTakeaway}
-            </p>
+            <div className="text-gray-700">
+              <p>
+                <strong>Remote Desktop Software: 10 backlinks</strong> added in June boosted its ranking to page 1.
+              </p>
+              <p className="mt-2">
+                <strong>Remote Access: 30 backlinks</strong> were added in Jan, helping maintain a stable position on page 1.
+              </p>
+            </div>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
