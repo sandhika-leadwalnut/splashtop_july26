@@ -113,13 +113,13 @@ export const KEY_FINDINGS = [
 
 export const BUSINESS_IMPACT_CONFIG = {
   topKeywordsCount: 9,
-  chartTitle: "Critical Keywords",
+  // chartTitle: "Critical Keywords",
   chartSubtitle: "Critical keywords Performance",
   insightText:
     "Backlinks played a key role in stabilizing rankings by killing volatility, resulting in consistent, upward movement for the critical keywords.",
   trendChartTitle: "Ranking Performance Trend",
   trendKeyTakeaway:
-    "Remote Access and Remote Desktop Software shows a noticeable improvement in rankings on page 1 after backlink addition. However, this improvement was not sustained due to the lack of consistent backlink addition, leading to fluctuations in ranking positions.",
+    "Remote Desktop Software: 10 backlinks added in June boosted its ranking to page 1, but the lack of consistent backlinking led to a drop.\n\nRemote Access: 30 backlinks were added in Jan, helping maintain a stable position on page 1.",
 };
 
 export const REFERRING_DOMAINS_CONFIG = {

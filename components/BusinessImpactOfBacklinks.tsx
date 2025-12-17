@@ -41,16 +41,16 @@ const BusinessImpactOfBacklinks = () => {
         <h2 className="text-xl font-bold text-gray-800">
           {UI_TEXT.businessImpact.title}
         </h2>
-        <h3 className="text-lg font-semibold text-gray-700 mt-2">
+        {/* <h3 className="text-lg font-semibold text-gray-700 mt-2">
           {BUSINESS_IMPACT_CONFIG.chartTitle}
-        </h3>
+        </h3> */}
         <div className="mt-3 px-4 py-2 bg-gray-100 rounded-md inline-block">
           <p className="text-sm font-semibold text-gray-700">Source: GSC</p>
         </div>
       </div>
 
       <div className="mb-6">
-        <div style={{ width: "100%", height: 400 }}>
+        <div style={{ width: "100%", height: 500 }}>
           <ResponsiveContainer>
             <ComposedChart
               data={keywordImpactRows
@@ -60,21 +60,47 @@ const BusinessImpactOfBacklinks = () => {
                   jan25: row.baseline,
                   oct25: row.nov25,
                 }))}
-              margin={{ top: 50, right: 30, left: 30, bottom: 120 }}
+              margin={{ top: 80, right: 30, left: 30, bottom: 60 }}
               barCategoryGap="25%"
             >
               <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
               <XAxis
                 dataKey="keyword"
-                tick={{ fontSize: 10, fontWeight: "bold" }}
+                tick={(props) => {
+                  const { x, y, payload } = props;
+                  const words = payload.value.split(" ");
+                  const midpoint = Math.ceil(words.length / 2);
+                  const line1 = words.slice(0, midpoint).join(" ");
+                  const line2 = words.slice(midpoint).join(" ");
+
+                  return (
+                    <g transform={`translate(${x},${y})`}>
+                      <text
+                        x={0}
+                        y={10}
+                        textAnchor="middle"
+                        fill="#374151"
+                        fontSize={10}
+                        fontWeight="bold"
+                      >
+                        <tspan x={0} dy={0}>
+                          {line1}
+                        </tspan>
+                        {line2 && (
+                          <tspan x={0} dy={14}>
+                            {line2}
+                          </tspan>
+                        )}
+                      </text>
+                    </g>
+                  );
+                }}
                 interval={0}
-                angle={-35}
-                textAnchor="end"
                 height={100}
                 label={{
                   value: "Keywords",
                   position: "insideBottom",
-                  offset: -10,
+                  // offset: -5,
                   style: {
                     textAnchor: "middle",
                     fill: "#6b7280",
@@ -97,7 +123,7 @@ const BusinessImpactOfBacklinks = () => {
               <Legend
                 verticalAlign="bottom"
                 align="center"
-                wrapperStyle={{ paddingTop: "20px" }}
+                wrapperStyle={{ paddingTop: "10px" }}
                 iconType="rect"
               />
               <text
@@ -147,10 +173,10 @@ const BusinessImpactOfBacklinks = () => {
         </div>
       </div>
 
-      <div className="space-y-4">
+      <div className="mt-4">
         <div className="p-4 rounded-lg border border-gray-200 bg-gray-50">
           <div className="flex items-start gap-3">
-            <i className="fa-solid fa-arrow-trend-up text-green-600 mt-1"></i>
+            <i className="fa-solid fa-arrow-trend-up text-green-600"></i>
             <p className="text-gray-700 font-bold">
               {BUSINESS_IMPACT_CONFIG.insightText}
             </p>
@@ -168,7 +194,7 @@ const BusinessImpactOfBacklinks = () => {
         <div className="mb-4 p-4 rounded-lg border border-gray-200 bg-gray-50">
           <div className="flex items-start gap-3">
             <i className="fa-solid fa-lightbulb text-yellow-600 mt-1"></i>
-            <p className="text-gray-700 font-bold">
+            <p className="text-gray-700 font-bold whitespace-pre-line">
               {BUSINESS_IMPACT_CONFIG.trendKeyTakeaway}
             </p>
           </div>
