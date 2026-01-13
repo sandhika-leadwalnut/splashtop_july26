@@ -33,7 +33,7 @@ export interface PerformanceSummary {
   paChange: number;
   bestKeywordMove: KeywordMoveInfo | null;
   worstKeywordMove: KeywordMoveInfo | null;
-  overallStatus: "Improving" | "Declining" | "Stable" | "Positive" | "Negative";
+  overallStatus: "Need Improvement" | "Declining" | "Stable" | "Positive" | "Negative";
 }
 
 export interface PerformanceSummaryData {

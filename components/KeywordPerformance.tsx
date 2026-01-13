@@ -43,8 +43,15 @@ const KeywordPerformance = ({ data }: KeywordPerformanceProps) => {
 
   const janKeywords = keywordRankingPerformance.firstPage.jan25Data;
   const octKeywords = keywordRankingPerformance.firstPage.oct25Data;
-
-  const top3Oct = octKeywords.filter((k) => k.rank <= 3);
+const top3Oct: KeywordRankInfo[] =
+  keywordRankingPerformance.topThree.data
+    .filter((k) => k.oct25Rank <= 3)
+    .map((k) => ({
+      keyword: k.keyword,
+      url: k.url,
+      rank: k.oct25Rank,
+    }));
+ /*const top3Oct = octKeywords.filter((k) => k.rank <= 3);*/
   const firstPageOct = octKeywords.filter((k) => k.rank <= 10);
 
   const top3JanCount = janKeywords.filter((k) => k.rank <= 3).length;
@@ -118,7 +125,7 @@ const KeywordPerformance = ({ data }: KeywordPerformanceProps) => {
                     Position Change
                   </th>
                   <th className="p-3 text-center text-xs font-bold text-gray-600 uppercase">
-                    Nov Rank
+                    Dec Rank
                   </th>
                 </tr>
               </thead>
@@ -218,12 +225,14 @@ const KeywordPerformance = ({ data }: KeywordPerformanceProps) => {
           <ResponsiveContainer>
             <ComposedChart
               data={data}
-              margin={{ top: 5, right: 10, left: 60, bottom: 10 }}
+              margin={{ top: 20, right: 10, left: 60, bottom: 10 }}
             >
               <CartesianGrid strokeDasharray="3 3" vertical={false} />
               <XAxis dataKey="name" stroke="#6b7280" fontSize={12} />
               <YAxis
                 allowDecimals={false}
+                domain={[0, "dataMax + 2"]}
+                 ticks={[0, 2, 4, 8, 12]}
                 stroke="#6b7280"
                 fontSize={12}
                 width={50}

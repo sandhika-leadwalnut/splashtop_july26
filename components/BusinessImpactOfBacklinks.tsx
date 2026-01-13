@@ -58,7 +58,7 @@ const BusinessImpactOfBacklinks = () => {
                 .map((row) => ({
                   keyword: row.keyword,
                   jan25: row.baseline,
-                  oct25: row.nov25,
+                  oct25: row.dec25,
                 }))}
               margin={{ top: 80, right: 30, left: 30, bottom: 60 }}
               barCategoryGap="25%"

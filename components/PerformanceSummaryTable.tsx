@@ -77,11 +77,10 @@ const PerformanceSummaryTable = ({ data }: PerformanceSummaryTableProps) => {
                     <MoveDisplay move={summary.worstKeywordMove} type="worst" />
                   </td>
                   <td className="p-4 whitespace-nowrap">
-                    {summary.overallStatus === "Improving" && (
-                      <span className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
-                        <ImprovingIcon />
-                        Improving
-                      </span>
+                    {summary.overallStatus === "Need Improvement" && (
+                      <span className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs font-semibold">
+  Need Improvement
+</span>
                     )}
                     {summary.overallStatus === "Positive" && (
                       <span className="inline-flex items-center bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">
@@ -98,7 +97,7 @@ const PerformanceSummaryTable = ({ data }: PerformanceSummaryTableProps) => {
                         Negative
                       </span>
                     )}
-                    {summary.overallStatus !== "Improving" &&
+                    {summary.overallStatus !== "Need Improvement" &&
                       summary.overallStatus !== "Positive" &&
                       summary.overallStatus !== "Stable" &&
                       summary.overallStatus !== "Negative" && (

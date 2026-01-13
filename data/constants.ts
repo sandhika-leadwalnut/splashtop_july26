@@ -1,5 +1,5 @@
 export const REPORT_CONFIG = {
-  reportDate: "Dec 10, 2025",
+  reportDate: "Jan 10, 2025",
   reportTitle: "Backlink Performance Summary Report",
   reportSubtitle: "Country: US | Source: Ahrefs, GSC",
   dataSource: "Ahrefs, GSC",
@@ -29,6 +29,7 @@ export const months: string[] = [
   "Sep'25",
   "Oct'25",
   "Nov'25",
+  "Dec'25",
 ];
 
 // Extended months array (used for trend charts with more historical data)
@@ -51,6 +52,7 @@ export const extendedMonths = [
   "Sep'25",
   "Oct'25",
   "Nov'25",
+  "Dec'25",
 ];
 
 // Month indices for baseline and current comparison
@@ -66,50 +68,51 @@ export const MONTH_INDICES = {
 // These should match the months at MONTH_INDICES.baseline and MONTH_INDICES.current
 export const MONTH_LABELS = {
   baseline: "Jan 2025 (Baseline)", // Display label for baseline month
-  current: "Nov 2025", // Display label for current month
+  current: "Dec 2025", // Display label for current month
 };
 
 export const DASHBOARD_STATS = {
-  urlsTracked: 8,
-  totalBacklinks: 121,
-  keywordsTracked: 16,
-  dataSource: "Ahrefs, GSC",
+  urlsTracked: 15,
+  totalBacklinks: 135,
+  keywordsTracked: 23,
+  dataSource: "Semrush, GSC, Moz",
 };
 
 export const KEY_FINDINGS = [
   {
     title: "High-Quality Backlink Profile",
     description:
-      "The backlink profile is of high quality, with over 96% of its referring domains having an authoritative score of 41 or higher.",
+      "The link acquisition strategy is strongly quality-driven. Over 97% of newly acquired referring domains have a Domain Authority (DA) of 41+ (131 out of 135), including 32 links from elite-tier domains (DA 71–100). This highlights a consistent focus on authoritative and trustworthy sources.",
     icon: "fas fa-shield-alt",
     color: "text-purple-600",
     bgColor: "bg-purple-50",
   },
   {
-    title: "Remote Access Product Page: Campaign Standout",
+    title: "Remote Access Product Page Sets the Benchmark",
     description:
-      'The Remote Access Product page is the campaign\'s standout performer. It achieved the highest authority growth (+10 PA) and a massive ranking surge, moving +93 positions for the high-intent keyword "Remote Access Solution."',
+      "The /products/remote-access page delivered outstanding performance, recording a +10 increase in Page Authority along with significant keyword ranking improvements. This page now serves as a benchmark for successful link acquisition and on-page optimization.",
     icon: "fas fa-trophy",
     color: "text-green-600",
     bgColor: "bg-green-50",
   },
   {
-    title: '"What is..." Blog Pages Show Strong Ranking Growth',
+    title: "TOFU Blog Page Requires Immediate Attention",
     description:
-      '"What is..." blog pages are seeing significant ranking improvements despite flat or declining Page Authority. "What is Remote Desktop" (+31 positions) and "What is Secure Remote Access" (+34 positions) proved that content relevance is currently driving rankings more than raw link power for top-of-funnel queries.',
+      "Key top-of-funnel content is showing warning signs. The /blog/what-is-remote-support page experienced a notable 7-point drop in Page Authority, indicating the need for renewed backlink support and content reinforcement.",
+    icon: "fas fa-exclamation-circle",
+    color: "text-red-600",
+    bgColor: "bg-red-50",
+  },
+  {
+    title: "Authority-Ranking Mismatch on Commercial Pages",
+    description:
+      "Several high-intent commercial pages show rising Page Authority but declining keyword rankings. Pages such as /compare/logmein-alternative (PA +4, rank -17) and /compare/gotomypc-alternative/pricing (PA +2, rank -7) indicate that continued and targeted backlink acquisition is required to translate authority gains into ranking improvements.",
     icon: "fas fa-chart-line",
     color: "text-blue-600",
     bgColor: "bg-blue-50",
   },
-  {
-    title: "Secure Remote Desktop Page Shows Volatility",
-    description:
-      'The Secure Remote Desktop solution page is showing dangerous volatility. While it gained +12 spots for one variation, it crashed -81 positions for "Remote desktop secure." This page need to be prioritized for consistent link building.',
-    icon: "fas fa-exclamation-triangle",
-    color: "text-amber-600",
-    bgColor: "bg-amber-50",
-  },
 ];
+
 
 export const BUSINESS_IMPACT_CONFIG = {
   topKeywordsCount: 9,
