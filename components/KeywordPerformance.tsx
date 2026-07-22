@@ -45,7 +45,7 @@ const KeywordPerformance = ({ data }: KeywordPerformanceProps) => {
   const octKeywords = keywordRankingPerformance.firstPage.oct25Data;
 const top3Oct: KeywordRankInfo[] =
   keywordRankingPerformance.topThree.data
-    .filter((k) => k.oct25Rank <= 3)
+    .filter((k) => k.oct25Rank <= 5)
     .map((k) => ({
       keyword: k.keyword,
       url: k.url,
@@ -125,7 +125,7 @@ const top3Oct: KeywordRankInfo[] =
                     Position Change
                   </th>
                   <th className="p-3 text-center text-xs font-bold text-gray-600 uppercase">
-                    Dec Rank
+             May Rank
                   </th>
                 </tr>
               </thead>
@@ -297,19 +297,21 @@ const top3Oct: KeywordRankInfo[] =
       <div className="w-full h-px bg-gray-200 mb-6"></div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        
         <div className="bg-white p-4 rounded-lg shadow">
           <div className="flex items-center">
             <div className="bg-blue-100 rounded-full p-2 mr-4">
               <i className="fa-solid fa-arrow-right-to-bracket text-xl text-blue-500"></i>
             </div>
             <div>
-              <p className="text-sm text-gray-500">Keywords in Top 3</p>
+              <p className="text-sm text-gray-500">Keywords in Top 5</p>
               <p className="text-2xl font-bold">
                 {keywordRankingPerformance.topThree.oct25}
               </p>
             </div>
           </div>
         </div>
+       
         <div className="bg-white p-4 rounded-lg shadow">
           <div className="flex items-center">
             <div className="bg-blue-100 rounded-full p-3 mr-4">
@@ -326,6 +328,7 @@ const top3Oct: KeywordRankInfo[] =
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+  
         <TrendChart
           title={UI_TEXT.keywordPerformance.top3Title}
           data={top3Data}
@@ -334,9 +337,11 @@ const top3Oct: KeywordRankInfo[] =
           title={UI_TEXT.keywordPerformance.firstPageTitle}
           data={firstPageData}
         />
+   
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <KeywordTableCard
           title={UI_TEXT.keywordPerformance.top3Title}
           keywords={top3Oct}
@@ -345,8 +350,9 @@ const top3Oct: KeywordRankInfo[] =
           title={UI_TEXT.keywordPerformance.firstPageTitle}
           keywords={firstPageOct}
         />
+        </div>
       </div>
-    </div>
+   
   );
 };
 

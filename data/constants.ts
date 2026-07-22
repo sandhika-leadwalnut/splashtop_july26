@@ -1,5 +1,5 @@
 export const REPORT_CONFIG = {
-  reportDate: "Jan 10, 2025",
+  reportDate: "June 8 , 2026",
   reportTitle: "Backlink Performance Summary Report",
   reportSubtitle: "Country: US | Source: Ahrefs, GSC",
   dataSource: "Ahrefs, GSC",
@@ -17,19 +17,8 @@ export const REPORT_CONFIG = {
 // Main months array (used for performanceData monthlyData arrays)
 // Array indices: 0=Dec'24, 1=Jan'25, 2=Feb'25, ..., 10=Oct'25
 export const months: string[] = [
-  "Dec'24",
-  "Jan'25",
-  "Feb'25",
-  "Mar'25",
-  "Apr'25",
-  "May'25",
-  "June'25",
-  "July'25",
-  "Aug'25",
-  "Sep'25",
-  "Oct'25",
-  "Nov'25",
   "Dec'25",
+  "Feb'26",
 ];
 
 // Extended months array (used for trend charts with more historical data)
@@ -53,6 +42,11 @@ export const extendedMonths = [
   "Oct'25",
   "Nov'25",
   "Dec'25",
+  "Feb'26",
+  "Mar'26",
+  "Apr'26",
+  "May'26",
+ 
 ];
 
 // Month indices for baseline and current comparison
@@ -67,59 +61,63 @@ export const MONTH_INDICES = {
 // Month labels for display (used in charts and UI)
 // These should match the months at MONTH_INDICES.baseline and MONTH_INDICES.current
 export const MONTH_LABELS = {
-  baseline: "Jan 2025 (Baseline)", // Display label for baseline month
-  current: "Dec 2025", // Display label for current month
+  baseline: "Dec 2025 (Baseline)", // Display label for baseline month
+  current: "May 2026", // Display label for current month
 };
 
 export const DASHBOARD_STATS = {
   urlsTracked: 15,
-  totalBacklinks: 135,
-  keywordsTracked: 23,
-  dataSource: "Semrush, GSC, Moz",
+  totalBacklinks: 208,
+  keywordsTracked: 35,
+  PlanTotalBacklinks : "240",
 };
 
 export const KEY_FINDINGS = [
   {
-    title: "High-Quality Backlink Profile",
+    title: "High-Authority Backlink Acquisition",
     description:
-      "The link acquisition strategy is strongly quality-driven. Over 97% of newly acquired referring domains have a Domain Authority (DA) of 41+ (131 out of 135), including 32 links from elite-tier domains (DA 71–100). This highlights a consistent focus on authoritative and trustworthy sources.",
+      "The link acquisition strategy continues to be quality-focused. Of the 208 referring domains acquired to date, 177 (86%) have a Domain Authority (DA) of 41+, including 28 high-authority domains (DA 71–100). This reflects a consistent focus on securing placements from authoritative and credible sources.",
     icon: "fas fa-shield-alt",
     color: "text-purple-600",
     bgColor: "bg-purple-50",
   },
   {
-    title: "Remote Access Product Page Sets the Benchmark",
+    title: "Breakthrough in Top 5 Keyword Rankings",
     description:
-      "The /products/remote-access page delivered outstanding performance, recording a +10 increase in Page Authority along with significant keyword ranking improvements. This page now serves as a benchmark for successful link acquisition and on-page optimization.",
+      "From having no keywords in the top 5 positions in December 2025, three keywords have now moved into the top 5, marking a significant improvement in high-intent search visibility and competitive positioning.",
     icon: "fas fa-trophy",
     color: "text-green-600",
     bgColor: "bg-green-50",
   },
   {
-    title: "TOFU Blog Page Requires Immediate Attention",
+    title: "Growth in First-Page Keyword Visibility",
     description:
-      "Key top-of-funnel content is showing warning signs. The /blog/what-is-remote-support page experienced a notable 7-point drop in Page Authority, indicating the need for renewed backlink support and content reinforcement.",
+      "The number of keywords ranking on page 1 increased from 4 in Dec’25 to 7 in May’26, while 3 keywords have now reached the top 5 positions. This indicates continued growth in visibility across priority keywords and stronger positioning in high-visibility SERP locations.",
     icon: "fas fa-exclamation-circle",
     color: "text-red-600",
     bgColor: "bg-red-50",
   },
   {
-    title: "Authority-Ranking Mismatch on Commercial Pages",
+    title: "Strong Improvement  in AEM & PM Keyword Performance ",
     description:
-      "Several high-intent commercial pages show rising Page Authority but declining keyword rankings. Pages such as /compare/logmein-alternative (PA +4, rank -17) and /compare/gotomypc-alternative/pricing (PA +2, rank -7) indicate that continued and targeted backlink acquisition is required to translate authority gains into ranking improvements.",
+      "AEM & PM keywords are now leading performance, with 'autonomous endpoint management' improving to #5, 'patch management' improving to #12, and 'patch management software' showing significant improvement, indicating stronger visibility across Autonomous Endpoint Management-related searches.",
     icon: "fas fa-chart-line",
     color: "text-blue-600",
     bgColor: "bg-blue-50",
   },
+ 
 ];
 
 
 export const BUSINESS_IMPACT_CONFIG = {
-  topKeywordsCount: 9,
+  topKeywordsCount: 18,
   // chartTitle: "Critical Keywords",
   chartSubtitle: "Critical keywords Performance",
-  insightText:
-    "Backlinks played a key role in stabilizing rankings by killing volatility, resulting in consistent, upward movement for the critical keywords.",
+  insightText: [
+  "Remote access keywords are showing good improvement, especially the commercial keyword 'remote support software (1)' now ranking in the first position, while 'remote access software (6)' continues to maintain a first-page ranking.",
+  "Most of the competitor keywords are showing great improvement, with three keywords now ranking in the top 10 positions.",
+  "Autonomous endpoint management' is showing strong improvement and now ranks in the 5th position, while 'patch management' has also improved significantly, moving from position 62 to 12."
+],
   trendChartTitle: "Ranking Performance Trend",
   trendKeyTakeaway:
     "Remote Desktop Software: 10 backlinks added in June boosted its ranking to page 1. \n\nRemote Access: 30 backlinks were added in Jan, helping maintain a stable position on page 1.",
@@ -127,12 +125,12 @@ export const BUSINESS_IMPACT_CONFIG = {
 
 export const REFERRING_DOMAINS_CONFIG = {
   qualityStatement:
-    "72% of referring domains have DA 41-70, indicating high-quality backlink profile",
+    "Approximately 87% of referring domains fall within the DA 41–100 range, reflecting a strong and credible backlink profile supported by high-quality, authoritative referring websites.",
 };
 
 export const IMPLEMENTATION_CONFIG = {
   sheetUrl:
-    "https://docs.google.com/spreadsheets/d/1KWPr6SbGlpCdvmA8vrxzIPUJEHjwBUZFMql5ODZcj7U/edit?usp=sharing",
+    "https://docs.google.com/spreadsheets/d/1n4DS4gZ-HHtsGh5CXGdxUHXd8dlTbX01LcWD3OHnGxM/edit?gid=0#gid=0",
   sheetLinkText: "Detailed Monthly Backlink Sheet",
 };
 
@@ -144,7 +142,7 @@ export const IMAGE_PATHS = {
 export const UI_TEXT = {
   keywordPerformance: {
     title: "Keyword Ranking Performance",
-    top3Title: "Keywords in Top 3 Positions",
+    top3Title: "Keywords in Top 5 Positions",
     firstPageTitle: "Keywords on Page 1",
     noKeywords: "No keywords in this category.",
   },
@@ -162,7 +160,7 @@ export const UI_TEXT = {
     title: "Business Impact of Backlinks",
   },
   implementationDetails: {
-    title: "Backlink Accquisation Details",
+    title: "Backlink Acquisition Details",
   },
   backlinkBestPractices: {
     title: "Backlink Best Practices",

@@ -16,6 +16,7 @@ import BusinessImpactOfBacklinks from "./components/BusinessImpactOfBacklinks";
 import ImplementationDetails from "./components/ImplementationDetails";
 import KeyFindings from "./components/KeyFindings";
 import BacklinkBestPractices from "./components/BacklinkBestPractices";
+import HighlightsSection from "./components/HighlightsSection";
 
 const App: React.FC = () => {
   const totalBacklinks = performanceData
@@ -45,20 +46,20 @@ const App: React.FC = () => {
             icon={
               <i className="fa-solid fa-file-lines text-3xl text-blue-500"></i>
             }
-            title="Source"
-            value={DASHBOARD_STATS.dataSource}
-            description=""
-          />
-          <SummaryCard
-            icon={<UrlIcon />}
             title="URLs Tracked"
             value={DASHBOARD_STATS.urlsTracked.toString()}
             description=""
           />
           <SummaryCard
-            icon={<i className="fa-solid fa-search text-3xl text-blue-500"></i>}
+            icon={<UrlIcon />}
             title="Keywords Tracked"
             value={DASHBOARD_STATS.keywordsTracked.toString()}
+            description=""
+          />
+          <SummaryCard
+            icon={<i className="fa-solid fa-search text-3xl text-blue-500"></i>}
+            title="Plan Total Backlinks"
+            value={DASHBOARD_STATS.PlanTotalBacklinks.toString()}
             description=""
           />
           <SummaryCard
@@ -82,8 +83,9 @@ const App: React.FC = () => {
         <ImplementationDetails />
 
         <KeyFindings />
+        <HighlightsSection />
 
-        <BacklinkBestPractices />
+         <BacklinkBestPractices /> 
       </main>
     </div>
   );

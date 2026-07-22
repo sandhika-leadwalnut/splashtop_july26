@@ -1,15 +1,17 @@
 export interface MetricData {
   name: string;
   monthlyData: (number | null)[];
-  lastWeekIncrease: string;
-  overallGrowth: string;
+  lastWeekIncrease?: string;
+  overallGrowth?: string;
   isKeyword?: boolean;
 }
+
 
 export interface PagePerformanceData {
   id: number;
   url: string;
   metrics: MetricData[];
+  
 }
 
 export interface KeywordRankInfo {
