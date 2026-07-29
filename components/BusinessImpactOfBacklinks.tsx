@@ -22,11 +22,11 @@ import {
   UI_TEXT,
 } from "../data/index";
 const categoryInsights = [
-  "Remote access keywords are showing good improvement, with the keyword 'remote access (4)' now ranking in position 4, continuing to hold a consistent presence on the first page since December.",
+  "Remote access keywords are showing good improvement, especially the commercial keywords 'remote access software (1)' and ‘remote support software (1)’ now ranking in the first position.",
 
-  "Most of the competitor keywords are showing steady improvement, with 'anydesk pricing (5)' now ranking in the top 5, while 'teamviewer alternative (9)' and 'teamviewer pricing (9)' have both moved into the top 10 positions. ",
+  "Most of the competitor keywords are showing great improvement, with three keywords now ranking in the top 10 positions.",
 
-  "'Patch management' is showing strong improvement and has moved significantly from position 62 to 9, while 'remote support' has also improved, now ranking in the 10th position. ",
+  "All three keywords are showing significant improvement, with one keyword now ranking in the top 10 positions: autonomous endpoint management (7).",
 ];
 const InsightBox = ({ text }: { text: string }) => (
  <div className="flex justify-center mt-2 mb-6">

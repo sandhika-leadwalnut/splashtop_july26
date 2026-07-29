@@ -9,62 +9,62 @@ export const performanceSummary: PerformanceSummary[] = [
   {
     url: "https://www.splashtop.com/blog/what-is-remote-access",
     paChange: 1,
-    bestKeywordMove: { keyword: "what is remote access", change: "+5" },
-    worstKeywordMove: { keyword: "benefits of remote access", change: "-1" },
+    bestKeywordMove: { keyword: "what is remote access", change: "+4" },
+    worstKeywordMove: null,
     overallStatus: "Positive",
   },
   {
     url: "https://www.splashtop.com/products/remote-access",
     paChange: 4,
-    bestKeywordMove: { keyword: "remote access software", change: "+7" },
+    bestKeywordMove: { keyword: "remote access software", change: "+12" },
     worstKeywordMove: null,
     overallStatus: "Positive",
   },
   {
     url: "https://www.splashtop.com/blog/what-is-remote-desktop",
     paChange: 7,
-    bestKeywordMove: { keyword: "remote desktop", change: "+1" },
-    worstKeywordMove: { keyword: "what is remote desktop", change: "-11" },
+    bestKeywordMove: null,
+    worstKeywordMove: { keyword: "remote desktop", change: "-6" },
     overallStatus: "Negative",
   },
   {
     url: "https://www.splashtop.com/solutions/remote-desktop",
     paChange: 1,
-    bestKeywordMove: { keyword: "remote desktop program", change: "+39" },
+    bestKeywordMove: { keyword: "remote desktop program", change: "+35" },
     worstKeywordMove: { keyword: "remote desktop", change: "-15" },
     overallStatus: "Positive",
   },
   {
     url: "https://www.splashtop.com/blog/what-is-remote-support",
-    paChange: 9,
+    paChange: 7,
     bestKeywordMove: null,
-    worstKeywordMove: { keyword: "remote support", change: "-6" },
+    worstKeywordMove: { keyword: "remote support", change: "-14" },
     overallStatus: "Negative",
   },
   {
     url: "https://www.splashtop.com/products/remote-support",
-    paChange: 3,
-    bestKeywordMove: { keyword: "remote support software", change: "+11" },
+    paChange: 2,
+    bestKeywordMove: { keyword: "remote support software", change: "+7" },
     worstKeywordMove: null,
     overallStatus: "Positive",
   },
   {
     url: "https://www.splashtop.com/blog/what-is-patch-management",
-    paChange: 1,
-    bestKeywordMove: { keyword: "patch management", change: "+50" },
+    paChange: 0,
+    bestKeywordMove: { keyword: "patch management", change: "+46" },
     worstKeywordMove: null,
     overallStatus: "Positive",
   },
   {
     url: "https://www.splashtop.com/solutions/patch-management",
-    paChange: 6,
-    bestKeywordMove: null,
+    paChange: 5,
+    bestKeywordMove: { keyword: "automated patch management solution", change: "+16" },
     worstKeywordMove: { keyword: "patch management solution", change: "-10" },
-    overallStatus: "Negative",
+    overallStatus: "Positive",
   },
   {
     url: "https://www.splashtop.com/blog/autonomous-endpoint-management",
-    paChange: 5,
+    paChange: 4,
     bestKeywordMove: null,
     worstKeywordMove: { keyword: "autonomous endpoint management software", change: "-1" },
     overallStatus: "Negative",
@@ -72,14 +72,14 @@ export const performanceSummary: PerformanceSummary[] = [
   {
     url: "https://www.splashtop.com/compare/teamviewer-alternative",
     paChange: 0,
-    bestKeywordMove: { keyword: "teamviewer alternative", change: "+2" },
-    worstKeywordMove: null,
-    overallStatus: "Positive",
+    bestKeywordMove: null,
+    worstKeywordMove: { keyword: "teamviewer alternative", change: "-1" },
+    overallStatus: "Negative",
   },
   {
     url: "https://www.splashtop.com/blog/teamviewer-pricing-comparison",
     paChange: 0,
-    bestKeywordMove: { keyword: "teamviewer pricing", change: "+12" },
+    bestKeywordMove: { keyword: "teamviewer pricing", change: "+13" },
     worstKeywordMove: null,
     overallStatus: "Positive",
   },
@@ -87,28 +87,28 @@ export const performanceSummary: PerformanceSummary[] = [
     url: "https://www.splashtop.com/compare/anydesk-alternative",
     paChange: 0,
     bestKeywordMove: null,
-    worstKeywordMove: { keyword: "anydesk alternative", change: "-4" },
+    worstKeywordMove: { keyword: "anydesk alternative", change: "-9" },
     overallStatus: "Negative",
   },
   {
     url: "https://www.splashtop.com/blog/anydesk-pricing-comparison",
     paChange: -12,
-    bestKeywordMove: null,
+    bestKeywordMove: { keyword: "anydesk pricing", change: "+2" },
     worstKeywordMove: null,
-    overallStatus: "Stable",
+    overallStatus: "Positive",
   },
   {
     url: "https://www.splashtop.com/compare/logmein-alternative",
     paChange: 1,
-    bestKeywordMove: null,
+    bestKeywordMove: { keyword: "logmein alternative", change: "+9" },
     worstKeywordMove: null,
-    overallStatus: "Stable",
+    overallStatus: "Positive",
   },
   {
     url: "https://www.splashtop.com/compare/logmein-alternative/pricing",
-    paChange: -15,
+    paChange: -16,
     bestKeywordMove: null,
-    worstKeywordMove: { keyword: "logmein pricing", change: "-20" },
+    worstKeywordMove: { keyword: "logmein pricing", change: "-21" },
     overallStatus: "Negative",
   },
 ];
@@ -119,9 +119,9 @@ export const performanceSummary: PerformanceSummary[] = [
 // ============================================================================
 // Referring domains distribution by DA (Domain Authority) score
 export const referringDomainsData = [
-  { name: "DA 71-100", value: 28, color: "#14b8a6" },
-  { name: "DA 41-70", value: 149, color: "#3b82f6" },
-  { name: "DA 25-40", value: 29, color: "#22c55e" },
+  { name: "DA 71-100", value: 15, color: "#14b8a6" },
+  { name: "DA 41-70", value: 94, color: "#3b82f6" },
+  { name: "DA 25-40", value: 14, color: "#22c55e" },
 ];
 
 // Monthly backlink growth trend (used in BacklinkGrowthChart)
@@ -129,7 +129,7 @@ export const monthlyBacklinkGrowth = [
   {month: "Feb'26", backlinks: 50},
   {month: "Mar'26", backlinks: 25},
   {month: "Apr'26", backlinks: 48},
-  {month: "May'26", backlinks: 83},
+ 
 
 ];
 
@@ -145,22 +145,22 @@ export const keywordRankingPerformance = {
 
     data: [
       {
-        url: "https://www.splashtop.com/products/remote-support",
-        keyword: "remote support software",
-        jan25Rank: 12,
-        oct25Rank: 1,
-      },
-      {
-        url: "https://www.splashtop.com/compare/teamviewer-alternative",
-        keyword: "teamviewer alternative",
+        url: "https://www.splashtop.com/blog/what-is-remote-access",
+        keyword: "remote access",
         jan25Rank: 7,
         oct25Rank: 5,
       },
       {
-        url: "https://www.splashtop.com/blog/autonomous-endpoint-management",
-        keyword: "autonomous endpoint management",
-        jan25Rank: 14,
-        oct25Rank: 5,
+        url: "https://www.splashtop.com/products/remote-access",
+        keyword: "remote access software",
+        jan25Rank: 13,
+        oct25Rank: 1,
+      },
+      {
+        url: "https://www.splashtop.com/products/remote-support",
+        keyword: "remote support software",
+        jan25Rank: 12,
+        oct25Rank: 1,
       },
     ],
   },
@@ -211,12 +211,12 @@ export const keywordRankingPerformance = {
       {
         url: "https://www.splashtop.com/blog/what-is-remote-access",
         keyword: "remote access",
-        rank: 6,
+        rank: 5,
       },
       {
         url: "https://www.splashtop.com/products/remote-access",
         keyword: "remote access software",
-        rank: 6,
+        rank: 1,
       },
       {
         url: "https://www.splashtop.com/products/remote-support",
@@ -226,27 +226,26 @@ export const keywordRankingPerformance = {
       {
         url: "https://www.splashtop.com/compare/teamviewer-alternative",
         keyword: "teamviewer alternative",
-        rank: 5,
+        rank: 8,
       },
       {
         url: "https://www.splashtop.com/blog/teamviewer-pricing-comparison",
         keyword: "teamviewer pricing",
-        rank: 8,
+        rank: 7,
       },
       {
         url: "https://www.splashtop.com/blog/anydesk-pricing-comparison",
         keyword: "anydesk pricing",
-        rank: 8,
+        rank: 6,
       },
       {
         url: "https://www.splashtop.com/blog/autonomous-endpoint-management",
         keyword: "autonomous endpoint management",
-        rank: 5,
+        rank: 7,
       },
     ],
   },
 };
-
 // ============================================================================
 // RANKING PERFORMANCE TREND DATA
 // ============================================================================
@@ -738,28 +737,28 @@ export interface KeywordImpactRow {
 }
 
 export const keywordImpactRows: KeywordImpactRow[] = [
-  { keyword: "remote access", baseline: 7, jan25: 6, dec25: 6 },
-  { keyword: "remote access software", baseline: 13, jan25: 6, dec25: 6 },
+  { keyword: "remote access", baseline: 7, jan25: 5, dec25: 5 },
+  { keyword: "remote access software", baseline: 13, jan25: 1, dec25: 1 },
 
-  { keyword: "remote support", baseline: 8, jan25: 14, dec25: 14 },
+  { keyword: "remote support", baseline: 8, jan25: 22, dec25: 22 },
   { keyword: "remote support software", baseline: 12, jan25: 1, dec25: 1 },
 
   { keyword: "remote desktop", baseline: 12, jan25: 27, dec25: 27 },
-  { keyword: "remote desktop software", baseline: 20, jan25: 11, dec25: 11 },
+  { keyword: "remote desktop software", baseline: 20, jan25: 13, dec25: 13 },
 
-  { keyword: "teamviewer alternative", baseline: 7, jan25: 5, dec25: 5 },
-  { keyword: "teamviewer pricing", baseline: 20, jan25: 8, dec25: 8 },
+  { keyword: "teamviewer alternative", baseline: 7, jan25: 8, dec25: 8 },
+  { keyword: "teamviewer pricing", baseline: 20, jan25: 7, dec25: 7 },
 
-  { keyword: "logmein alternative", baseline: 22, jan25: 22, dec25: 22 },
-  { keyword: "logmein pricing", baseline: 11, jan25: 31, dec25: 31 },
+  { keyword: "logmein alternative", baseline: 22, jan25: 13, dec25: 13 },
+  { keyword: "logmein pricing", baseline: 11, jan25: 32, dec25: 32 },
 
-  { keyword: "anydesk alternative", baseline: 20, jan25: 24, dec25: 24 },
-  { keyword: "anydesk pricing", baseline: 8, jan25: 8, dec25: 8 },
+  { keyword: "anydesk alternative", baseline: 20, jan25: 29, dec25: 29 },
+  { keyword: "anydesk pricing", baseline: 8, jan25: 6, dec25: 6 },
 
-  { keyword: "patch management", baseline: 62, jan25: 12, dec25: 12 },
+  { keyword: "patch management", baseline: 62, jan25: 16, dec25: 16 },
   { keyword: "patch management software", baseline: 101, jan25: 39, dec25: 39 },
 
-  { keyword: "autonomous endpoint management", baseline: 14, jan25: 5, dec25: 5 },
+  { keyword: "autonomous endpoint management", baseline: 14, jan25: 7, dec25: 7 },
 ];
 // ============================================================================
 // KEYWORD TREND CHARTS DATA

@@ -1,5 +1,5 @@
 export const REPORT_CONFIG = {
-  reportDate: "June 8 , 2026",
+  reportDate: "May 8 , 2026",
   reportTitle: "Backlink Performance Summary Report",
   reportSubtitle: "Country: US | Source: Ahrefs, GSC",
   dataSource: "Ahrefs, GSC",
@@ -45,7 +45,7 @@ export const extendedMonths = [
   "Feb'26",
   "Mar'26",
   "Apr'26",
-  "May'26",
+
  
 ];
 
@@ -62,29 +62,29 @@ export const MONTH_INDICES = {
 // These should match the months at MONTH_INDICES.baseline and MONTH_INDICES.current
 export const MONTH_LABELS = {
   baseline: "Dec 2025 (Baseline)", // Display label for baseline month
-  current: "May 2026", // Display label for current month
+  current: "April 2026", // Display label for current month
 };
 
 export const DASHBOARD_STATS = {
   urlsTracked: 15,
-  totalBacklinks: 208,
+  totalBacklinks: 123,
   keywordsTracked: 35,
-  PlanTotalBacklinks : "240",
+  PlanTotalBacklinks : "175",
 };
 
 export const KEY_FINDINGS = [
   {
     title: "High-Authority Backlink Acquisition",
     description:
-      "The link acquisition strategy continues to be quality-focused. Of the 208 referring domains acquired to date, 177 (86%) have a Domain Authority (DA) of 41+, including 28 high-authority domains (DA 71–100). This reflects a consistent focus on securing placements from authoritative and credible sources.",
+      "The link acquisition strategy continues to be quality-focused. Of the 123 referring domains, 109 (89%) have a Domain Authority (DA) of 41+, including 15 high-authority domains (DA 71–100). This reflects a consistent focus on securing placements from authoritative and credible sources.",
     icon: "fas fa-shield-alt",
     color: "text-purple-600",
     bgColor: "bg-purple-50",
   },
   {
-    title: "Breakthrough in Top 5 Keyword Rankings",
+    title: "Shift Toward High-Intent Keyword Performance",
     description:
-      "From having no keywords in the top 5 positions in December 2025, three keywords have now moved into the top 5, marking a significant improvement in high-intent search visibility and competitive positioning.",
+      "Commercial keywords are now leading performance, with “remote access software” and “remote support software” reaching #1, and “remote access” improving to #5, showing stronger alignment with conversion-driven searches.",
     icon: "fas fa-trophy",
     color: "text-green-600",
     bgColor: "bg-green-50",
@@ -92,15 +92,15 @@ export const KEY_FINDINGS = [
   {
     title: "Growth in First-Page Keyword Visibility",
     description:
-      "The number of keywords ranking on page 1 increased from 4 in Dec’25 to 7 in May’26, while 3 keywords have now reached the top 5 positions. This indicates continued growth in visibility across priority keywords and stronger positioning in high-visibility SERP locations.",
+      "The number of keywords ranking on page 1 increased from 4 in Dec’25 to 7 in Apr’26, indicating a steady expansion in first-page visibility across priority terms and improved overall keyword positioning in high-visibility SERP positions.",
     icon: "fas fa-exclamation-circle",
     color: "text-red-600",
     bgColor: "bg-red-50",
   },
   {
-    title: "Strong Improvement  in AEM & PM Keyword Performance ",
+    title: "Consistent Page Authority Growth Across Core Pages",
     description:
-      "AEM & PM keywords are now leading performance, with 'autonomous endpoint management' improving to #5, 'patch management' improving to #12, and 'patch management software' showing significant improvement, indicating stronger visibility across Autonomous Endpoint Management-related searches.",
+      "Authority has improved across key pages:“What is Remote Desktop” page (36 → 43),“What is Remote Support” page (33 → 40),Remote Access product page (43 → 47),Patch Management solution page (33 → 38).This reflects sustained authority building across both informational and solution-led pages.",
     icon: "fas fa-chart-line",
     color: "text-blue-600",
     bgColor: "bg-blue-50",
@@ -114,9 +114,9 @@ export const BUSINESS_IMPACT_CONFIG = {
   // chartTitle: "Critical Keywords",
   chartSubtitle: "Critical keywords Performance",
   insightText: [
-  "Remote access keywords are showing good improvement, especially the commercial keyword 'remote support software (1)' now ranking in the first position, while 'remote access software (6)' continues to maintain a first-page ranking.",
+  "Remote access keywords are showing good improvement, especially the commercial keywords 'remote access software (1)' and ‘remote support software (1)’ now ranking in the first position.",
   "Most of the competitor keywords are showing great improvement, with three keywords now ranking in the top 10 positions.",
-  "Autonomous endpoint management' is showing strong improvement and now ranks in the 5th position, while 'patch management' has also improved significantly, moving from position 62 to 12."
+  "All three keywords are showing significant improvement, with one keyword now ranking in the top 10 positions: autonomous endpoint management (7)."
 ],
   trendChartTitle: "Ranking Performance Trend",
   trendKeyTakeaway:
@@ -125,7 +125,7 @@ export const BUSINESS_IMPACT_CONFIG = {
 
 export const REFERRING_DOMAINS_CONFIG = {
   qualityStatement:
-    "Approximately 87% of referring domains fall within the DA 41–100 range, reflecting a strong and credible backlink profile supported by high-quality, authoritative referring websites.",
+    "Approximately 89% of referring domains fall within the DA 41–100 range, reflecting a strong and credible backlink profile supported by high-quality, authoritative referring websites.",
 };
 
 export const IMPLEMENTATION_CONFIG = {
