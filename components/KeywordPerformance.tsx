@@ -125,7 +125,7 @@ const top3Oct: KeywordRankInfo[] =
                     Position Change
                   </th>
                   <th className="p-3 text-center text-xs font-bold text-gray-600 uppercase">
-             April Rank
+             July Rank
                   </th>
                 </tr>
               </thead>
@@ -327,7 +327,7 @@ const top3Oct: KeywordRankInfo[] =
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
   
         <TrendChart
           title={UI_TEXT.keywordPerformance.top3Title}
@@ -338,7 +338,7 @@ const top3Oct: KeywordRankInfo[] =
           data={firstPageData}
         />
    
-      </div>
+      </div> */}
 
       
        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">

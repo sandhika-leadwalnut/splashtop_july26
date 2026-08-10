@@ -1,5 +1,5 @@
 export const REPORT_CONFIG = {
-  reportDate: "May 8 , 2026",
+  reportDate: "Aug 7, 2026",
   reportTitle: "Backlink Performance Summary Report",
   reportSubtitle: "Country: US | Source: Ahrefs, GSC",
   dataSource: "Ahrefs, GSC",
@@ -62,45 +62,45 @@ export const MONTH_INDICES = {
 // These should match the months at MONTH_INDICES.baseline and MONTH_INDICES.current
 export const MONTH_LABELS = {
   baseline: "Dec 2025 (Baseline)", // Display label for baseline month
-  current: "April 2026", // Display label for current month
+  current: "July 2026", // Display label for current month
 };
 
 export const DASHBOARD_STATS = {
   urlsTracked: 15,
-  totalBacklinks: 123,
+  totalBacklinks: 346,
   keywordsTracked: 35,
-  PlanTotalBacklinks : "175",
+  PlanTotalBacklinks : "380",
 };
 
 export const KEY_FINDINGS = [
   {
     title: "High-Authority Backlink Acquisition",
     description:
-      "The link acquisition strategy continues to be quality-focused. Of the 123 referring domains, 109 (89%) have a Domain Authority (DA) of 41+, including 15 high-authority domains (DA 71–100). This reflects a consistent focus on securing placements from authoritative and credible sources.",
+      "Approximately 88% of referring domains fall within the DA 41–100 range, demonstrating a strong backlink profile supported by authoritative and credible referring websites. ",
     icon: "fas fa-shield-alt",
     color: "text-purple-600",
     bgColor: "bg-purple-50",
   },
   {
-    title: "Shift Toward High-Intent Keyword Performance",
+    title: "Strong Growth in Backlink Acquisition",
     description:
-      "Commercial keywords are now leading performance, with “remote access software” and “remote support software” reaching #1, and “remote access” improving to #5, showing stronger alignment with conversion-driven searches.",
+      "July recorded the highest monthly backlink acquisition to date, with 108 new backlinks, bringing the total backlink count to 346 and reflecting consistent momentum in expanding the backlink profile. ",
     icon: "fas fa-trophy",
     color: "text-green-600",
     bgColor: "bg-green-50",
   },
   {
-    title: "Growth in First-Page Keyword Visibility",
+    title: "Strong Performance Across Competitor Keywords",
     description:
-      "The number of keywords ranking on page 1 increased from 4 in Dec’25 to 7 in Apr’26, indicating a steady expansion in first-page visibility across priority terms and improved overall keyword positioning in high-visibility SERP positions.",
+      "Competitor keywords continue to perform well, with 'teamviewer pricing' and 'anydesk pricing' ranking in the top 5, while 'teamviewer alternative' maintains a first-page position. ",
     icon: "fas fa-exclamation-circle",
     color: "text-red-600",
     bgColor: "bg-red-50",
   },
   {
-    title: "Consistent Page Authority Growth Across Core Pages",
+    title: "Strong Improvement in Informational Keywords",
     description:
-      "Authority has improved across key pages:“What is Remote Desktop” page (36 → 43),“What is Remote Support” page (33 → 40),Remote Access product page (43 → 47),Patch Management solution page (33 → 38).This reflects sustained authority building across both informational and solution-led pages.",
+      "Informational keywords continue to strengthen, with 'remote desktop' ranking in the top 3, 'remote access' maintaining a top 5 position, and 'patch management' securing a first-page ranking. ",
     icon: "fas fa-chart-line",
     color: "text-blue-600",
     bgColor: "bg-blue-50",
@@ -114,9 +114,9 @@ export const BUSINESS_IMPACT_CONFIG = {
   // chartTitle: "Critical Keywords",
   chartSubtitle: "Critical keywords Performance",
   insightText: [
-  "Remote access keywords are showing good improvement, especially the commercial keywords 'remote access software (1)' and ‘remote support software (1)’ now ranking in the first position.",
-  "Most of the competitor keywords are showing great improvement, with three keywords now ranking in the top 10 positions.",
-  "All three keywords are showing significant improvement, with one keyword now ranking in the top 10 positions: autonomous endpoint management (7)."
+  "Remote access and remote desktop keywords continue to deliver strong visibility, with 'remote desktop (3)' moving into the top 5 and 'remote access (5)' maintaining a first-page ranking.",
+  "Competitor keywords continue to strengthen, with 'anydesk pricing (4)' and 'teamviewer pricing (5)' now ranking in the top 5, while 'teamviewer alternative (9)' maintains a first-page position.",
+  "Patch management is showing significant improvement, moving from position 62 to 8 and securing a first-page ranking."
 ],
   trendChartTitle: "Ranking Performance Trend",
   trendKeyTakeaway:
@@ -125,7 +125,7 @@ export const BUSINESS_IMPACT_CONFIG = {
 
 export const REFERRING_DOMAINS_CONFIG = {
   qualityStatement:
-    "Approximately 89% of referring domains fall within the DA 41–100 range, reflecting a strong and credible backlink profile supported by high-quality, authoritative referring websites.",
+    "Approximately 91% of referring domains fall within the DA 41–100 range, reflecting a strong and credible backlink profile supported by high-quality, authoritative referring websites.",
 };
 
 export const IMPLEMENTATION_CONFIG = {
