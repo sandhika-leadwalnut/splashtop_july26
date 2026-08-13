@@ -149,13 +149,12 @@ const HighlightsSection = () => {
         </p>
       </div>
     </div>
-
-    <div className="mt-8 flex justify-center">
-      <div className="w-full max-w-4xl border-2 border-gray-300 rounded-2xl overflow-hidden shadow-md bg-white p-4">
+<div className="mt-8 flex justify-center">
+      <div className="w-full max-w-2xl border-2 border-gray-300 rounded-2xl overflow-hidden shadow-md bg-white p-3">
         <img
           src="/llm-1.png"
           alt="Leading AI Visibility"
-          className="w-full h-auto object-contain rounded-lg"
+          className="w-full h-auto max-h-[400px] object-contain rounded-lg mx-auto"
         />
       </div>
     </div>
