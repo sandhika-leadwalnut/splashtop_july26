@@ -5,32 +5,19 @@ const KeyFindings = () => {
 
   return (
     <div className="bg-white p-6 rounded-xl shadow-md mb-8">
-      <h2 className="text-xl font-bold text-gray-800 mb-6">Key Findings</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mb-5">Key Findings</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <ul className="space-y-3 pl-2">
         {findings.map((finding, index) => (
-          <div
-            key={index}
-            className={`${finding.bgColor} border border-gray-200 rounded-lg p-5`}
-          >
-            <div className="flex items-start gap-4">
-              <div
-                className={`flex-shrink-0 w-10 h-10 ${finding.bgColor} rounded-lg flex items-center justify-center`}
-              >
-                <i className={`${finding.icon} ${finding.color} text-lg`}></i>
-              </div>
-              <div className="flex-1">
-                <h3 className="font-semibold text-gray-800 mb-2">
-                  {finding.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {finding.description}
-                </p>
-              </div>
-            </div>
-          </div>
+          <li key={index} className="flex items-start gap-3">
+            <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gray-900" />
+            <p
+              className="text-[15px] leading-7 text-gray-700 [&>strong]:font-bold [&>strong]:text-gray-900"
+              dangerouslySetInnerHTML={{ __html: finding.description }}
+            />
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

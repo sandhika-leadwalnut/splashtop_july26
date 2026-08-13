@@ -70,7 +70,7 @@ const App: React.FC = () => {
           />
         </div>
 
-        <BusinessImpactOfBacklinks />
+        {/* <BusinessImpactOfBacklinks /> */}
 
         <ReferringDomainsChart data={referringDomainsData} />
 
