@@ -76,7 +76,7 @@ export const KEY_FINDINGS = [
   {
     title: "High-Authority Backlink Acquisition",
     description:
-      "<strong>Approximately 91% of referring domains have a DA between 41–100, reflecting a strong backlink profile supported by authoritative and credible websites.</strong>",
+      "<strong>Approximately 91% of referring domains have a DA between 41–100</strong>, reflecting a strong backlink profile supported by authoritative and credible websites.",
     icon: "fas fa-shield-alt",
     color: "text-purple-600",
     bgColor: "bg-purple-50",
@@ -84,7 +84,7 @@ export const KEY_FINDINGS = [
   {
     title: "Strong Growth in Backlink Acquisition",
     description:
-      "<strong>July recorded the highest monthly backlink acquisition to date, with 108 new backlinks bringing the total to 346.</strong>",
+      "July recorded the highest monthly backlink acquisition to date,<strong> with 108 new backlinks bringing the total to 346.</strong>",
     icon: "fas fa-trophy",
     color: "text-green-600",
     bgColor: "bg-green-50",
@@ -92,7 +92,7 @@ export const KEY_FINDINGS = [
   {
     title: "Strong Performance Across Competitor Keywords",
     description:
-      "<strong>Competitor keywords continue to perform well, with 'teamviewer pricing' and 'anydesk pricing' ranking in the top 5, while 'teamviewer alternative' maintains a first-page position.</strong>",
+      "Competitor keywords continue to perform well,<strong> with 'teamviewer pricing' and 'anydesk pricing' ranking in the top 5</strong>, while 'teamviewer alternative' maintains a first-page position.",
     icon: "fas fa-exclamation-circle",
     color: "text-red-600",
     bgColor: "bg-red-50",
@@ -100,7 +100,7 @@ export const KEY_FINDINGS = [
   {
     title: "Strong Improvement in Informational Keywords",
     description:
-      "<strong>Informational keywords continue to strengthen, with 'remote desktop' ranking in the top 3, 'remote access' maintaining a top 5 position, and 'patch management' securing a first-page ranking.</strong>",
+      "Informational keywords continue to strengthen, <strong>with 'remote desktop' and 'autonomous endpoint management' now ranking in the top 3, 'remote access' maintaining a top 5 position</strong>, and 'patch management' securing a first-page ranking. ",
     icon: "fas fa-chart-line",
     color: "text-blue-600",
     bgColor: "bg-blue-50",

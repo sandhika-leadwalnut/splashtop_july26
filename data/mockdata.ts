@@ -65,8 +65,8 @@ export const performanceSummary: PerformanceSummary[] = [
   {
     url: "https://www.splashtop.com/blog/autonomous-endpoint-management",
     paChange: 5,
-    bestKeywordMove: null,
-    worstKeywordMove: { keyword: "autonomous endpoint management", change: "-87" },
+    bestKeywordMove:{ keyword: "autonomous endpoint", change: "+12" },
+    worstKeywordMove: null,
     overallStatus: "Negative",
   },
   {
@@ -142,7 +142,7 @@ export const monthlyBacklinkGrowth = [
 export const keywordRankingPerformance = {
   topThree: {
     jan25: 0,
-    oct25: 4,
+    oct25: 5,
 
     data: [
       {
@@ -174,7 +174,7 @@ export const keywordRankingPerformance = {
 
   firstPage: {
     jan25: 4,
-    oct25: 7,
+    oct25: 8,
 
     jan25Data: [
       {
