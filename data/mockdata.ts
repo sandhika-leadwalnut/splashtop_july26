@@ -67,7 +67,7 @@ export const performanceSummary: PerformanceSummary[] = [
     paChange: 5,
     bestKeywordMove:{ keyword: "autonomous endpoint", change: "+12" },
     worstKeywordMove: null,
-    overallStatus: "Negative",
+    overallStatus: "Positive",
   },
   {
     url: "https://www.splashtop.com/compare/teamviewer-alternative",
@@ -169,6 +169,12 @@ export const keywordRankingPerformance = {
         jan25Rank: 8,
         oct25Rank: 4,
       },
+      {
+        url: "https://www.splashtop.com/blog/autonomous-endpoint-management",
+        keyword: "autonomous endpoint management",
+        jan25Rank: 14,
+        oct25Rank: 2,
+      }
     ],
   },
 
@@ -212,6 +218,11 @@ export const keywordRankingPerformance = {
         keyword: "patch management",
         rank: 62,
       },
+      {
+        url: "https://www.splashtop.com/blog/autonomous-endpoint-management",
+        keyword: "autonomous endpoint management",
+        rank: 14,
+      }
     ],
 
     oct25Data: [
@@ -250,6 +261,11 @@ export const keywordRankingPerformance = {
         keyword: "patch management",
         rank: 8,
       },
+      {
+        url: "https://www.splashtop.com/blog/autonomous-endpoint-management",
+        keyword: "autonomous endpoint management",
+        rank: 2,
+      }
     ],
   },
 };
